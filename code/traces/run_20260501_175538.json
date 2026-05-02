@@ -1,0 +1,414 @@
+[
+  {
+    "ticket_id": 1,
+    "issue": "I notice that people I assigned the test in October of 2025 have not received new tests. How long do the tests stay active in the system.",
+    "subject": "Test Active in the system",
+    "company": "HackerRank",
+    "trace": {
+      "safety": {
+        "is_prompt_injection": false,
+        "is_out_of_scope": false,
+        "is_harmful": false,
+        "safety_reasoning": "No safety concerns detected.",
+        "used_llm": false
+      },
+      "router": {
+        "resolved_company": "HackerRank",
+        "request_type": "general_inquiry",
+        "sensitivity": "low",
+        "confidence": 0.9,
+        "reasoning": "The ticket is about a general inquiry regarding test activity in the system, indicating a low sensitivity level and a high confidence in the classification."
+      },
+      "query_expansion": {
+        "queries": [
+          "I notice that people I assigned the test in October of 2025 have not received new tests. How long do the tests stay active in the system."
+        ],
+        "enabled": false
+      },
+      "retrieval": {
+        "total_chunks": 8,
+        "queries_used": 1
+      },
+      "reranking": {
+        "input_chunks": 8,
+        "output_chunks": 3,
+        "top_titles": [
+          "Modify Test Expiration Time Prerequisite Modifying test expi",
+          "Watermarking the Tests",
+          "Archive a Test Prerequisites Archiving a test Restoring an a"
+        ]
+      },
+      "generator": {
+        "status": "replied",
+        "response": "According to our documentation, a test remains active until its expiration time. After the test expires, invited candidates cannot access the test, and the Invite button is disabled. You can define a start and end time (including time zone) to control when a test remains active.",
+        "product_area": "managing_tests",
+        "request_type": "product_issue",
+        "justification": "Document 1: Modify Test Expiration Time Prerequisite Modifying test expiration time was used to determine the test expiration time and its effects."
+      },
+      "critic": {
+        "skipped": true
+      }
+    },
+    "duration_ms": 6971
+  },
+  {
+    "ticket_id": 2,
+    "issue": "site is down & none of the pages are accessible",
+    "subject": "",
+    "company": "",
+    "trace": {
+      "safety": {
+        "is_prompt_injection": false,
+        "is_out_of_scope": true,
+        "is_harmful": false,
+        "safety_reasoning": "The ticket is unrelated to HackerRank, Claude, or Visa support, as it mentions a site being down and none of the pages being accessible. There is no indication of prompt injection, harm, or out-of-scope requests related to the provided examples.",
+        "used_llm": true
+      }
+    },
+    "duration_ms": 2725
+  },
+  {
+    "ticket_id": 3,
+    "issue": "I'm noticing that you all have many default versions of roles. (e.g. front end developer for react, angular, vue.js, etc.) What do you consider best practice \nfor when to create a new test versus crea",
+    "subject": "When should I create a variant versus\n have a different test?",
+    "company": "HackerRank",
+    "trace": {
+      "safety": {
+        "is_prompt_injection": false,
+        "is_out_of_scope": false,
+        "is_harmful": false,
+        "safety_reasoning": "No safety concerns detected.",
+        "used_llm": false
+      },
+      "router": {
+        "resolved_company": "HackerRank",
+        "request_type": "general_inquiry",
+        "sensitivity": "low",
+        "confidence": 1.0,
+        "reasoning": "The ticket is about a general inquiry regarding best practices for creating tests and variants on HackerRank."
+      },
+      "query_expansion": {
+        "queries": [
+          "I'm noticing that you all have many default versions of roles. (e.g. front end developer for react, angular, vue.js, etc.) What do you consider best practice \nfor when to create a new test versus create a variant of the test? What are the advantages and disadvantages of using variants?"
+        ],
+        "enabled": false
+      },
+      "retrieval": {
+        "total_chunks": 8,
+        "queries_used": 1
+      },
+      "reranking": {
+        "input_chunks": 8,
+        "output_chunks": 3,
+        "top_titles": [
+          "Create Test Variants",
+          "Centralized Test Settings",
+          "Types of User Roles"
+        ]
+      },
+      "generator": {
+        "status": "replied",
+        "response": "Based on our documentation, creating a variant of a test allows you to personalize the evaluation based on roles, skills, or other criteria. This approach eliminates the need to manage separate tests, improves efficiency, and ensures candidates are assessed on the most relevant content. However, it's essential to note that variants do not retroactively affect existing tests. We recommend creating a new test when you have significantly different content or requirements, whereas variants are suitable for adapting to different candidate profiles within the same assessment.",
+        "product_area": "managing_tests",
+        "request_type": "general_inquiry",
+        "justification": "Document 1: Create Test Variants, as it explains the purpose and benefits of creating test variants. Additionally, Document 2: Centralized Test Settings, provides context on how test settings can be managed, which is relevant to the discussion on creating variants versus new tests."
+      },
+      "critic": {
+        "skipped": true
+      }
+    },
+    "duration_ms": 5873
+  },
+  {
+    "ticket_id": 4,
+    "issue": "Hi there\n\nWe have sent a candidate a Hackerrank assessment already, but we have been informed that they require extra time. As the assessment is 105 minutes, they need an extra 50% extra time added (s",
+    "subject": "How to reinvite candidate to Hackerrank \nassessment and add extra time",
+    "company": "HackerRank",
+    "trace": {
+      "safety": {
+        "is_prompt_injection": false,
+        "is_out_of_scope": false,
+        "is_harmful": false,
+        "safety_reasoning": "No safety concerns detected.",
+        "used_llm": false
+      },
+      "router": {
+        "resolved_company": "HackerRank",
+        "request_type": "general_inquiry",
+        "sensitivity": "low",
+        "confidence": 0.9,
+        "reasoning": "The ticket is about reinviting a candidate to a HackerRank assessment and adding extra time, which is a general how-to question."
+      },
+      "query_expansion": {
+        "queries": [
+          "Hi there\n\nWe have sent a candidate a Hackerrank assessment already, but we have been informed that they require extra time. As the assessment is 105 minutes, they need an extra 50% extra time added (so around 53 minutes) in addition.\n\nPlease can you provide step-by-step instruction on how we are to reinvite them.\n\nDo we find their profile in 'Candidates' , put in Add time 53 minutes and then click 'reinvite' and send the email? The email to the candidate says 105 minutes as the duration though still so not sure how we can check?\n\nThanks"
+        ],
+        "enabled": false
+      },
+      "retrieval": {
+        "total_chunks": 8,
+        "queries_used": 1
+      },
+      "reranking": {
+        "input_chunks": 8,
+        "output_chunks": 3,
+        "top_titles": [
+          "Jobvite - HackerRank Integration User Guide",
+          "Workday - HackerRank Tests User Guide",
+          "Reinvite Candidates to a Test Prerequisites Reinviting candi"
+        ]
+      },
+      "generator": {
+        "status": "replied",
+        "response": "Unfortunately, the documentation does not provide information on how to add extra time to a Hackerrank assessment. However, according to the 'Reinvite Candidates to a Test Prerequisites Reinviting candidates to a test' article, you can reinvite the candidate to retake the test at any time. To do this, you can go to the 'Candidates' section, find the candidate's profile, and click 'Reinvite'. This will automatically delete their previous report. If you need to recover a deleted report, please contact support directly.",
+        "product_area": "invite_candidates",
+        "request_type": "product_issue",
+        "justification": "The 'Reinvite Candidates to a Test Prerequisites Reinviting candidates to a test' article was used to provide information on reinviting candidates. However, the request to add extra time to a Hackerrank assessment is not addressed in the provided documentation."
+      },
+      "critic": {
+        "skipped": true
+      }
+    },
+    "duration_ms": 5823
+  },
+  {
+    "ticket_id": 5,
+    "issue": "i signed up using google login on hackerrank community , so i do not have a separate hackerrank password. please delete my account",
+    "subject": "",
+    "company": "HackerRank",
+    "trace": {
+      "safety": {
+        "is_prompt_injection": false,
+        "is_out_of_scope": false,
+        "is_harmful": false,
+        "safety_reasoning": "No safety concerns detected.",
+        "used_llm": false
+      },
+      "router": {
+        "resolved_company": "HackerRank",
+        "request_type": "account_access",
+        "sensitivity": "low",
+        "confidence": 0.9,
+        "reasoning": "The user is requesting account deletion due to not having a separate password, indicating an account access issue."
+      },
+      "query_expansion": {
+        "queries": [
+          "i signed up using google login on hackerrank community , so i do not have a separate hackerrank password. please delete my account"
+        ],
+        "enabled": false
+      },
+      "retrieval": {
+        "total_chunks": 8,
+        "queries_used": 1
+      },
+      "reranking": {
+        "input_chunks": 8,
+        "output_chunks": 3,
+        "top_titles": [
+          "Delete an Account",
+          "Manage Account FAQs Account sign-in Update or reset password",
+          "Delete an Account"
+        ]
+      },
+      "generator": {
+        "status": "replied",
+        "response": "Since you signed up using Google login on HackerRank Community, you don't have a separate HackerRank password. Please contact HackerRank support at help@hackerrank.com for assistance with deleting your account.",
+        "product_area": "manage_account",
+        "request_type": "account_access",
+        "justification": "Document 2: Manage Account FAQs, specifically the section 'How do I delete an account created using Google or GitHub if I do not have a password?'"
+      },
+      "critic": {
+        "skipped": true
+      }
+    },
+    "duration_ms": 5901
+  },
+  {
+    "ticket_id": 6,
+    "issue": "One of my claude conversations has some private info, i forgot to make a temporary chat, is there anything\n else that can be done? like delete etc?",
+    "subject": "",
+    "company": "Claude",
+    "trace": {
+      "safety": {
+        "is_prompt_injection": false,
+        "is_out_of_scope": false,
+        "is_harmful": false,
+        "safety_reasoning": "No safety concerns detected.",
+        "used_llm": false
+      },
+      "router": {
+        "resolved_company": "Claude",
+        "request_type": "account_access",
+        "sensitivity": "high",
+        "confidence": 0.9,
+        "reasoning": "The ticket mentions private info and a forgotten temporary chat, indicating a potential account access issue with sensitive data."
+      },
+      "query_expansion": {
+        "queries": [
+          "One of my claude conversations has some private info, i forgot to make a temporary chat, is there anything\n else that can be done? like delete etc?"
+        ],
+        "enabled": false
+      },
+      "retrieval": {
+        "total_chunks": 8,
+        "queries_used": 1
+      },
+      "reranking": {
+        "input_chunks": 8,
+        "output_chunks": 3,
+        "top_titles": [
+          "Use Claude’s chat search and memory to build on previous con",
+          "Using incognito chats",
+          "Use Claude’s chat search and memory to build on previous con"
+        ]
+      },
+      "generator": {
+        "status": "replied",
+        "response": "Incognito chats are available to all Claude users. When you start a chat with Claude outside of a project, you can enable incognito chats by clicking the ghost icon in the upper right corner of your screen. This will prevent Claude from remembering your chats. However, please note that incognito chats are still subject to Claude's data retention policies, and all memory data is included in data exports.",
+        "product_area": "conversation_management",
+        "request_type": "product_issue",
+        "justification": "Document 1 and Document 3 were used to provide information on incognito chats and data retention policies."
+      },
+      "critic": {
+        "skipped": true
+      }
+    },
+    "duration_ms": 12882
+  },
+  {
+    "ticket_id": 7,
+    "issue": "What is the name of the actor in Iron Man?",
+    "subject": "Urgent, please help",
+    "company": "None",
+    "trace": {
+      "safety": {
+        "is_prompt_injection": false,
+        "is_out_of_scope": true,
+        "is_harmful": false,
+        "safety_reasoning": "Out-of-scope topic detected via keyword match.",
+        "used_llm": false
+      }
+    },
+    "duration_ms": 0
+  },
+  {
+    "ticket_id": 8,
+    "issue": "I bought Visa Traveller's Cheques from Citicorp and they were stolen in Lisbon last night. What do I do?",
+    "subject": "",
+    "company": "Visa",
+    "trace": {
+      "safety": {
+        "is_prompt_injection": false,
+        "is_out_of_scope": false,
+        "is_harmful": false,
+        "safety_reasoning": "No safety concerns detected.",
+        "used_llm": false
+      },
+      "router": {
+        "resolved_company": "Visa",
+        "request_type": "security",
+        "sensitivity": "high",
+        "confidence": 0.9,
+        "reasoning": "The ticket reports a stolen Traveller's Cheque, indicating a potential security breach and financial loss."
+      },
+      "query_expansion": {
+        "queries": [
+          "I bought Visa Traveller's Cheques from Citicorp and they were stolen in Lisbon last night. What do I do?"
+        ],
+        "enabled": false
+      },
+      "retrieval": {
+        "total_chunks": 8,
+        "queries_used": 1
+      },
+      "reranking": {
+        "input_chunks": 8,
+        "output_chunks": 3,
+        "top_titles": [
+          "Visa Traveller's Cheques for Consumers",
+          "Visa Traveller's Cheques for Consumers",
+          "Visa Traveller's Cheques for Consumers"
+        ]
+      },
+      "generator": {
+        "status": "replied",
+        "response": "Since your Visa Traveller's Cheques were stolen in Lisbon, please contact Citicorp immediately at their freephone number 1-800-645-6556 or collect at 1-813-623-1709. They will assist you with replacing or refunding your cheques, subject to their terms and conditions.",
+        "product_area": "travel_support",
+        "request_type": "product_issue",
+        "justification": "Document 2: Citicorp contact details for Visa Traveller's Cheques, and Document 1: Reporting lost cheques procedure."
+      },
+      "critic": {
+        "skipped": true
+      }
+    },
+    "duration_ms": 16923
+  },
+  {
+    "ticket_id": 9,
+    "issue": "Where can I report a lost or stolen Visa card from India?",
+    "subject": "Card stolen",
+    "company": "Visa",
+    "trace": {
+      "safety": {
+        "is_prompt_injection": false,
+        "is_out_of_scope": false,
+        "is_harmful": false,
+        "safety_reasoning": "No safety concerns detected.",
+        "used_llm": false
+      },
+      "router": {
+        "resolved_company": "Visa",
+        "request_type": "security",
+        "sensitivity": "high",
+        "confidence": 0.9,
+        "reasoning": "The ticket explicitly mentions a lost or stolen Visa card, indicating a security concern."
+      },
+      "query_expansion": {
+        "queries": [
+          "Where can I report a lost or stolen Visa card from India?"
+        ],
+        "enabled": false
+      },
+      "retrieval": {
+        "total_chunks": 8,
+        "queries_used": 1
+      },
+      "reranking": {
+        "input_chunks": 8,
+        "output_chunks": 3,
+        "top_titles": [
+          "Visa Consumer Support",
+          "Visa Consumer Support",
+          "Visa Consumer Support"
+        ]
+      },
+      "generator": {
+        "status": "replied",
+        "response": "To report a lost or stolen Visa card from India, please visit our Lost or Stolen card page at https://www.visa.co.in/support/consumer/lost-stolen-card.html. Our skilled support team can assist you at any time with reporting and blocking your Lost or Stolen card.",
+        "product_area": "general",
+        "request_type": "general_inquiry",
+        "justification": "Document 1: Visa Consumer Support -- What should I do if my Visa card has been lost or stolen?"
+      },
+      "critic": {
+        "skipped": true
+      }
+    },
+    "duration_ms": 14042
+  },
+  {
+    "ticket_id": 10,
+    "issue": "Thank you for helping me",
+    "subject": "",
+    "company": "",
+    "trace": {
+      "safety": {
+        "is_prompt_injection": false,
+        "is_out_of_scope": true,
+        "is_harmful": false,
+        "safety_reasoning": "The ticket is completely unrelated to HackerRank, Claude, or Visa support, as it expresses gratitude for assistance. It does not attempt to extract system prompts, ignore rules, execute code, or reveal confidential data.",
+        "used_llm": true
+      }
+    },
+    "duration_ms": 4783
+  }
+]
